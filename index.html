@@ -343,7 +343,7 @@
                         var id_novosti = JSON.stringify(values)
                         console.log(values);
                         $.delete("http://localhost:8080/rest/rest/novosti/" + id_novosti, JSON.stringify(values), function(data){
-                            alert("Uspjesno obrisana novost")
+                            alert("Novost je uspesno izbrisana")
                         });
                     } else {
                         var values = {
@@ -352,7 +352,7 @@
                         var id_kategorije = JSON.stringify(values)
                         console.log(values);
                         $.delete("http://localhost:8080/rest/rest/kategorije/" + id_kategorije, JSON.stringify(values), function(data){
-                            alert("Uspjesno obrisana kategorija")
+                            alert("Kategorija je uspesno izbrisana")
                         });
                     }
                     break;
